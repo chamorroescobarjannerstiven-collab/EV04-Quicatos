@@ -1,9 +1,18 @@
-// Este controlador maneja la lógica de los servicios
 exports.obtenerProductos = (req, res) => {
-    res.json({ mensaje: "Lista de productos consultada con éxito" });
+    const inventario = [
+        { id: 1, articulo: "Piñata de Tambor", precio: 35000 },
+        { id: 2, articulo: "Carro a Control Remoto", precio: 55000 },
+        { id: 3, articulo: "Set de Globos", precio: 12000 }
+    ];
+    
+    res.json({
+        mensaje: "Inventario de Mis Quicatos consultado con éxito",
+        datos: inventario
+    });
 };
 
 exports.crearProducto = (req, res) => {
-    const nuevoProducto = req.body;
-    res.status(201).json({ mensaje: "Producto creado con éxito", data: nuevoProducto });
+    res.json({ 
+        mensaje: "Producto creado con éxito en Mis Quicatos" 
+    });
 };

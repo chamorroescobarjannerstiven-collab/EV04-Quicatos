@@ -1,0 +1,4 @@
+Proyecto: Quicatos
+Endpoint de consulta de productos:
+GET http://localhost:3000/api/productos
+Estado: 200 OK
